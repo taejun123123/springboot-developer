@@ -1,0 +1,27 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+  h2:
+    console:
+      enabled: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 891890076446-vmn2uprtnod6sjm7oalkhehid721mugg.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
+jwt:
+  issuer: ysya1219@naver.com
+  secret_key: hihi
+
